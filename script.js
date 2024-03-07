@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Objeto com os parâmetros para enviar no e-mail
       let emailParams = {
         to_email1: document.getElementById('email1').value,
-        // to_email2: document.getElementById('email2').value,
+        to_email2: document.getElementById('email2').value,
         client_name: clientName,
         client_email: clientEmail,
         company: company,
