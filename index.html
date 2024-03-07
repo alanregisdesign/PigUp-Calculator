@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Preços - PigUp Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/Pigup_Favicon.png">
+</head>
+<body>
+    <header>
+        <img src="/img/Pigup_Logo_Horizontal.png" alt="PigUp Studio Logo" id="company-logo">
+    </header>
+    <h1>Calculadora de Preços - PigUp Studio</h1>
+    <form id="calculator-form">
+        <table id="services-table">
+            <thead>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Descrição</th>
+                    <th>Preço (R$)</th>
+                    <th>Seleção</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- A tabela será preenchida via JavaScript -->
+            </tbody>
+        </table>
+        <div id="total-price">Preço Total: R$ 0,00</div>
+
+        <input type="hidden" id="email1" name="email1" value="alan@pigupstudio.com">
+        <input type="hidden" id="email2" name="email2" value="luiz@pigupstudio.com">
+        <button type="button" id="send-email">Enviar Orçamento</button>
+        
+    </form>
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "yybRw4DPg4xwDoLVN",
+        });
+    })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
