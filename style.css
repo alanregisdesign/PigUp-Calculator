@@ -88,3 +88,80 @@ input[type="number"] {
     width: 60px;
     margin-right: 10px;
 }
+
+/* Estilo do Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2; /* Certifique-se de que o z-index seja suficiente para sobrepor outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semi-transparente */
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #343343; /* Cor de fundo compatível com o site */
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #F68F1E; /* Borda com cor destacada */
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombreamento sutil */
+  }
+  
+  .close-button {
+    color: #C9C9C9;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: #F68F1E; /* Cor ao passar o mouse/focar */
+  }
+  
+  .modal h2 {
+    color: #F68F1E; /* Título do modal */
+    margin-bottom: 16px;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #C9C9C9; /* Cor do texto dos labels */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 96%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #A9A7A7; /* Cor da borda dos inputs */
+    border-radius: 4px;
+    background-color: #212120; /* Cor de fundo dos inputs */
+    color: #C9C9C9; /* Cor do texto dos inputs */
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #F68F1E; /* Cor de fundo do botão de enviar */
+    color: #343343; /* Cor do texto do botão */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #e07c15; /* Cor de fundo do botão ao passar o mouse */
+  }
+  

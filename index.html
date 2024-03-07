@@ -34,6 +34,29 @@
         <button type="button" id="send-email">Enviar Orçamento</button>
         
     </form>
+
+    <!-- Modal -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Informações Adicionais</h2>
+        <form id="additional-info-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="company">Empresa:</label>
+            <input type="text" id="company" name="company">
+            
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <button type="submit">Enviar</button>
+        </form>
+        </div>
+    </div>
     
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
